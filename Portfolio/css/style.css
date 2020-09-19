@@ -1,0 +1,333 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+}
+
+body {
+  font-family: 'Cinzel', serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background: url(/img/puu1.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #e9d5e9;
+}
+
+.main #logo {
+  height: 40px;
+}
+
+.main .kontti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .kontti header {
+  margin-top: 20vh;
+  width: 90%;
+  text-align: left;
+}
+
+.main .kontti header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.main .kontti header p {
+  line-height: 0rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.main .kontti section {
+  margin-top: 22vh;
+  width: 80%;
+  text-align: right;
+}
+
+.main .kontti section h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.main .kontti section .portfolio {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.main .kontti section .portfolio .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.main .kontti section .portfolio .letter {
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.main .kontti footer i {
+  font-size: 2.4rem;
+}
+
+.kuka {
+  background: url(/img/kukaMinä.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  color: #140202;
+}
+
+.kuka header {
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.kuka header h1 {
+  font-weight: 800;
+}
+
+.kuka .kortit {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 15vw;
+  -ms-grid-columns: 20% 20% 20%;
+      grid-template-columns: 20% 20% 20%;
+  grid-column-gap: 9.5vw;
+  color: #e9d5e9;
+}
+
+.kuka .kortit img {
+  width: 100%;
+  min-width: 180px;
+  display: inline-block;
+}
+
+.kuka .kortit .objekti {
+  font-size: 1.5rem;
+  margin-top: 5vh;
+}
+
+.kuka footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #e9d5e9;
+  margin-top: 10vh;
+}
+
+.leikkiKysymys {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.leikkiKysymys h3 {
+  font-weight: 600;
+}
+
+.leikkiKysymys button {
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.taidot {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.taidot .pallo {
+  z-index: 2;
+  position: absolute;
+  display: block;
+  background: purple;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+}
+
+.contact {
+  position: relative;
+  height: 100vh;
+}
+
+/* form asetukset */
+.formBox {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formBox h1 {
+  margin: 0 0 40px;
+  padding: 0;
+  color: grey;
+}
+
+.formBox input {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.formBox textarea {
+  height: 80px;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.formBox input,
+.formBox textarea {
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+
+.formBox input[type="submit"] {
+  border-bottom: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  background: purple;
+  color: #e9d5e9;
+}
+
+.formBox form div {
+  position: relative;
+}
+
+.formBox form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.formBox input:focus ~ label,
+.formBox textarea:focus ~ label,
+.formBox input:valid ~ label,
+.formBox textarea:valid ~ label {
+  top: -12px;
+  left: 0;
+  color: purple;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.formBox input:focus,
+.formBox textarea:focus,
+.formBox input:valid,
+.formBox textarea:valid {
+  border-bottom: 2px solid purple;
+}
+
+/* Social icons */
+.socialBox {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.socialBox a {
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.socialBox a {
+  font-size: 2.5rem;
+}
+
+.socialBox a:hover {
+  -webkit-box-shadow: inset 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.fa-facebook {
+  color: blue;
+}
+
+.fa-instagram-square {
+  color: red;
+}
+
+.fa-linkedin {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
